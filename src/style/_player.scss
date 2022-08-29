@@ -1,0 +1,117 @@
+.player {
+  transition: all 0.3s ease;
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__play-prev {
+    background: url('./img/play-prev.svg');
+  }
+
+  &__play {
+    height: 40px;
+    width: 40px;
+
+    background: url('./img/play.svg') center no-repeat;
+    background-size: cover;
+
+    margin: 5px;
+
+    transition: all 0.1s ease;
+  }
+
+  &__play-next {
+    background: url('./img/play-next.svg') center no-repeat;
+  }
+
+  &__play-btns{
+    height: 32px;
+    width: 32px;
+    background-size: cover;
+    margin: 5px;
+  }
+
+  &__music {
+    transition: all 0.3s;
+    @media (max-width: 768px) {
+      visibility: hidden;
+      opacity: 0;
+
+      position: absolute;
+      left: 50%;
+      top: -200px;
+      transform: translateX(-50%);
+		  
+    }
+    @media (max-height: 600px) {
+      visibility: hidden;
+      opacity: 0;
+
+      position: absolute;
+      left: 50%;
+      top: -200px;
+      transform: translateX(-50%);
+		  
+    }
+  }
+
+  &__music-item {
+    position: relative;
+
+    font-size: 12px;
+
+    margin: 10px 0 15px 30px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+
+
+      height: 18px;
+      width: 18px;
+
+      background: url('./img/play.svg') center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__mobile-list{
+    height: 30px;
+    width: 30px;
+    border: 0;
+    outline: 0;
+    background: url('./img/music.svg');
+    background-size: cover;
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    @media (max-height: 600px) {
+      display: block;
+    }
+  }
+
+  .pause {
+    background: url('./img/pause.svg') center no-repeat;
+    background-size: cover;
+  }
+}
+
+.item-active {
+  opacity: 0.5;
+  &::before {
+    background: url('./img/pause.svg') center no-repeat;
+    background-size: cover;
+  }
+}

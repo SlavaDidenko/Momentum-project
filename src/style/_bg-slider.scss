@@ -1,0 +1,24 @@
+.slide-arrow{
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+}
+
+.slide-next {
+  right: 0;
+  background: url(./img/slider-next.svg) right center no-repeat;
+  background-size: cover;
+}
+.slide-prev {
+  left: 0;
+  background: url(./img/slider-prev.svg) right center no-repeat;
+  background-size: cover;
+}
+
+.img-none{
+  display: none;
+}

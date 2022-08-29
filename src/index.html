@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <title>Momentum</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="player">
+        <div class="player__controls">
+          <button class="player__play-prev player__play-btns"></button>
+          <button class="player__play"></button>
+          <button class="player__play-next player__play-btns"></button>
+        </div>
+        <button class="player__mobile-list"></button>
+        <ul class="player__music">
+        </ul>
+      </div>
+      <div class="weather">
+        <input class="weather__city" type="text">
+        <div class="weather__wrapper">
+          <i class="weather__icon owf"></i>
+          <p class="weather__temperature"></p>
+        </div>
+        <p class="weather__humidity"></p>
+        <p class="weather__speed"></p>
+        <p class="weather__description"></p>
+      </div>
+    </header>
+    <main class="main">
+      <button class="slide-arrow slide-next"></button>
+      <button class="slide-arrow slide-prev"></button>
+      <div class="time"></div>
+      <div class="date"></div>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input class="name" type="text" name="name" placeholder="[Enter name]" autocomplete="off">
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="settings visible">
+        <h2 class="settings__title">Language</h2>
+        <div class="settings__wrapper-btns">
+          <button class="settings__lang-btn lang-btn ukrainian-lang">UA</button>
+          <button class="settings__lang-btn lang-btn english-lang">EN</button>
+        </div>
+        <h2 class="settings__title">Show</h2>
+        <ul class="settings__visible-list">
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="player" type="checkbox" checked>
+            <label for="player" class="to-do__checkbox">Player</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="weather" type="checkbox" checked>
+            <label for="weather" class="to-do__checkbox">Weather</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="time" type="checkbox" checked>
+            <label for="time" class="to-do__checkbox">Time</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="date" type="checkbox" checked>
+            <label for="date" class="to-do__checkbox">Date</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="greetings" type="checkbox" checked>
+            <label for="greetings" class="to-do__checkbox">Greetings</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="quotes" type="checkbox" checked>
+            <label for="quotes" class="to-do__checkbox">Quotes</label>
+          </li>
+          <li class="settings__visible-item">
+            <input class="to-do__custom-checkbox" id="to-do" type="checkbox" checked>
+            <label for="to-do" class="to-do__checkbox">Todo List</label>
+          </li>
+        </ul>
+      </div>
+      <button class="settings-btn" type="button"></button>
+      <div class="quote-wrapper">
+        <button class="reload"></button>
+        <p class="quote">
+        </p>
+        <p class="author"></p>
+      </div>
+      <div class="to-do visible">
+        <ul class="to-do__list">
+        </ul>
+        <form class="to-do__input-wrapper">
+          <input class="to-do__input" placeholder="I’m feeling good :)" type="text">
+          <button class="to-do__button" type="submit">Add</button>
+        </form>
+        <button type="button" class="to-do__clear-btn">Clear All</button>
+      </div>
+      <button class="open-to-do"></button>
+    </footer>
+  </div>
+</body>
+</html>

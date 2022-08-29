@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+
+  position: relative;
+  // @media (max-height: 600px) {
+  //   height: 30vh;
+  // }
+}

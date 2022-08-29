@@ -1,0 +1,52 @@
+.greeting-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.3s ease;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.greeting {
+  font-size: 32px;
+  max-width: 45%;
+  width: 100%;
+  text-align:right;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+  @media (max-width: 600px) {
+    text-align: center;
+    max-width: none;
+  }
+}
+
+.name{
+  font-size: 32px;
+  flex: 1;
+  max-width: 45%;
+  padding: 10px;
+  font-size: 40px;
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+  @media (max-width: 600px) {
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+  @media (max-height: 600px) {
+    font-size: 26px;
+  }
+}

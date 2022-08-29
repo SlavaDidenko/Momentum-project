@@ -1,0 +1,42 @@
+.quote-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 0;
+  }
+  @media (max-height: 600px) {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.quote{
+  letter-spacing: 160%;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+
+.reload {
+  background: url(./img/reload.svg) no-repeat center;
+  background-size:  cover;
+  height: 32px;
+  width: 32px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.reload-active {
+  display: block;
+}

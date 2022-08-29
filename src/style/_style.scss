@@ -1,0 +1,116 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+  font-family: 'Montserrat';
+  color: $white;
+	background-blend-mode: multiply;
+	background-size: cover!important;
+	transition: background-image 0.5s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	min-height: 400px;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.wrapper {
+	padding: 30px;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&::before {
+		content: '';
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		left:  0;
+
+		background: #23262C;
+		opacity: 0.7;
+		z-index: 2;
+		display: none;
+	}
+
+	@media (max-width: 768px) {
+    padding: 15px;
+  }
+	@media (max-height: 600px){
+		padding: 15px;
+	}
+}
+
+.wrapper-bg{
+	&::before{
+		display: block;
+	}
+}
+
+.window {
+	@media (max-width: 768px) {
+		left: 50%!important;
+		top: 50%!important;
+		transform: translate(-50%,-50%)!important;
+		max-width: 300px;
+		width: 100%;
+		background: #23262C;
+		border-radius: 20px;
+		padding: 20px;
+		z-index: 3;
+
+		opacity: 1!important;
+		visibility: unset!important;
+	}
+
+	@media (max-height: 600px) {
+		left: 50%!important;
+		top: 50%!important;
+		transform: translate(-50%,-50%)!important;
+		max-width: 300px;
+		width: 100%;
+		background: #23262C;
+		border-radius: 20px;
+		padding: 20px;
+		z-index: 3;
+
+		opacity: 1!important;
+		visibility: unset!important;
+	}
+}

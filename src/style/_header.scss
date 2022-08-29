@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: calc(30vh - 30px);
+  @media (max-width: 768px) {
+    height: calc(30vh - 15px);
+
+  }
+  @media (max-height: 600px) {
+    height: calc(30vh - 15px);
+  }
+}
